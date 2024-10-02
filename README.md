@@ -12,7 +12,15 @@
 
 ## デモ
 
-[デモサイトのリンク](https://axiaclip/demo-portfolio..git.io)
+[デモサイトのリンク](https://axiaclip-dev.github.io/photographer-portfolio/)
+
+### スナップショット
+
+#### PC版
+![PC版スナップショット](./assets/snap_pc.png)
+
+#### スマホ版
+![スマホ版スナップショット](./assets/snap_sp.png)
 
 ## 機能
 
@@ -27,15 +35,16 @@ portfolio/
  |- index.html
  |- style.css
  |- script.js
- |- .gitignor
+ |- .gitignore
  |- README.md
-```
 
 ## インストール
 
 1. リポジトリをクローンします。
+
    ```bash
-   git clone https://github.com/axiaclip/demo-portfolio.git
+   git clone https://github.com/axiaclip-dev/photographer-portfolio.git
+　　```
 
 ## 著作権
 ソースコードの著作権はAxia Clipにあります。
@@ -43,6 +52,7 @@ portfolio/
 ### 画像の著作権
 画像はFree画像を使用しています。クレジットは以下の通りです。
 
+```bash
 - profile: Photo by [ACworks on PhotoAC](https://www.photo-ac.com/main/detail/885078&title=%E7%95%91%E3%81%AB%E3%81%84%E3%82%8B%E8%BE%B2%E5%AE%B6%E3%81%AE%E5%A5%B3%E6%80%A715)
 - work01: Photo by [PAKUTASO](https://www.pakutaso.com/20240758209post-44497.html)
 - work02: Photo by [PAKUTASO](https://www.pakutaso.com/20240409095post-39834.html)
@@ -53,3 +63,4 @@ portfolio/
 - work07: Photo by [PAKUTASO](https://www.pakutaso.com/20240727207post-44628.html)
 - work08: Photo by [PAKUTASO](https://www.pakutaso.com/20240539128post-51149.html)
 - work09: Photo by [PAKUTASO](https://www.pakutaso.com/20240542152post-51389.html)
+```
