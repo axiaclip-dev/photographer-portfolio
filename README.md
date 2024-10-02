@@ -16,11 +16,7 @@
 
 ### スナップショット
 
-#### PC版
-![PC版スナップショット](./assets/snap_pc.png)
-
-#### スマホ版
-![スマホ版スナップショット](./assets/snap_sp.png)
+![デモサイトイメージ](./assets/demo/photographer-portfolio.png)
 
 ## 機能
 
@@ -30,21 +26,22 @@
 ## ディレクトリ構成
 
 ```bash
-portfolio/
- |- assets/
- |- index.html
- |- style.css
- |- script.js
- |- .gitignore
- |- README.md
+photographer-portfolio/
+  |- assets/
+  |- index.html
+  |- style.css
+  |- script.js
+  |- .gitignore
+  |- README.md
+```
 
 ## インストール
 
 1. リポジトリをクローンします。
 
-   ```bash
-   git clone https://github.com/axiaclip-dev/photographer-portfolio.git
-　　```
+```bash
+git clone https://github.com/axiaclip-dev/photographer-portfolio.git
+```
 
 ## 著作権
 ソースコードの著作権はAxia Clipにあります。
