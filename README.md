@@ -16,6 +16,7 @@
 
 ### スナップショット
 
+#### 左: PC版 | 右: スマホ版
 ![デモサイトイメージ](./assets/demo/photographer-portfolio.png)
 
 ## 機能
