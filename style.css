@@ -1,0 +1,247 @@
+/* 
+  style.css
+  ポートフォリオサイトのスタイルを定義します。
+  ここでは、全体のレイアウトやスタイリングを行います。
+*/
+
+/* 基本設定 */
+body {
+  font-family: "Roboto", "M PLUS Rounded 1c", sans-serif;
+  background: #fff;
+  color: var(--font-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/* CSSリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ルート設定 */
+:root {
+  --content-width: 1200px;
+  --primary-color: #007acc; /* プライマリーカラー: 明るい青 */
+  --secondary-color: #e0f7fa; /* セカンダリーカラー: 淡い水色 */
+  --font-color: #333; /* 文字色: 濃いグレー */
+  --hover-color: rgba(0, 122, 204, 0.7); /* ホバー時の色: 明るい青の半透明 */
+  --background-color: #f0f4f8; /* 背景色: 淡いグレー */
+}
+
+/* 画像のスタイル */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* メインコンテンツのスタイル */
+.main {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  background: var(--secondary-color)
+}
+
+/* サイドバーのスタイル */
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  padding: 0 12px;
+  box-shadow: 6px 0px 6px 2px rgb(193 193 193 / 30%);
+}
+
+/* サイドバーのプロフィールスタイル */
+.sidebar__profile {
+  text-align: center;
+  margin: 4em 0;
+  box-shadow: 2px 2px;
+}
+
+.sidebar__profile--name {
+  font-weight: 700;
+  margin: .6em 0;
+  font-size: 1.4em;
+}
+
+.sidebar__profile--detail {
+  font-size: .9em;
+  margin: 2em 0;
+}
+
+.sidebar__profile--sns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 1em 0;
+}
+
+.sidebar__profile--icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 10px 10px 5px var(--primary-color);
+}
+
+/* SNSアイコンのスタイル */
+.sidebar__profile--sns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 各SNSのブランドカラー */
+.sidebar__profile--sns a[aria-label="Xアカウント"] {
+  background-color: #000;
+}
+
+.sidebar__profile--sns a[aria-label="Facebookアカウント"] {
+  background-color: #3b5998;
+}
+
+.sidebar__profile--sns a[aria-label="Instagramアカウント"] {
+  background-color: #e1306c;
+}
+
+/* ホバー時のスタイル */
+.sidebar__profile--sns a:hover {
+  background-color: var(--hover-color);
+  color: #fff;
+}
+
+/* アイコンのサイズ調整 */
+.sidebar__profile--sns span {
+  font-size: 24px;
+}
+
+/* メニューのスタイル */
+.sidebar__menu {
+  display: none;
+}
+
+.sidebar__menu--item a {
+  font-size: 18px;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* ホバー時のスタイル */
+.sidebar__menu--item a:hover {
+  color: var(--hover-color);
+  background-color: var(--secondary-color);
+}
+
+/* コンテンツのスタイル */
+.contents {
+  max-width: var(--content-width);
+  padding: 1em;
+  margin: 0 auto;
+}
+
+/* 作品セクションのスタイル */
+.works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.works__item img {
+  height: 350px;
+  width: auto;
+  object-fit: cover;
+}
+
+/* アニメーション用CSS */
+.js-fadein {
+  opacity: 0;
+}
+
+.is-show {
+  opacity: 1;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  text-align: center;
+  margin: 0;
+  color: var(--font-color);
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+}
+
+/* メディアクエリ */
+@media screen and (min-width: 768px) {
+  .sidebar {
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    flex: 0 0 auto;
+    width: 250px;
+    height: 100vh;
+  }
+
+  .sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 1em 0;
+  }
+
+  .sidebar__menu a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing: .06em;
+    line-height: 2;
+  }
+
+  .sidebar__menu--item button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .main {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .works {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

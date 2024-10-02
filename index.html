@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- メタデータ設定 -->
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="こちらはフォトグラファー向けのポートフォリオサイトです。">
+    <!-- スタイルシートの読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>ポートフォリオサイト</title>
+  </head>
+  <body>
+    <!-- メインコンテンツ -->
+    <main class="main">
+      <div class="sidebar">
+        <!-- プロフィール -->
+        <div class="sidebar__profile">
+          <img src="assets/profile.jpg" alt="プロフィール画像" class="sidebar__profile--icon" width="512" height="512">
+          <p class="sidebar__profile--name">Kaori</p>
+          <p class="sidebar__profile--detail">風景フォトグラファー<br>日本の美しい山や里山、田園風景をお届けします。</p>
+          <!-- SNSリンク -->
+          <div class="sidebar__profile--sns">
+            <a href="#" aria-label="Xアカウント">
+              <span class="fa-brands fa-x-twitter"></span>
+            </a>
+            <a href="#" aria-label="Facebookアカウント">
+              <span class="fa-brands fa-facebook"></span>
+            </a>
+            <a href="#" aria-label="Instagramアカウント">
+              <span class="fa-brands fa-instagram"></span>
+            </a>
+          </div>
+        </div>
+        <!-- メニュー -->
+        <div class="sidebar__menu">
+          <div class="sidebar__menu--item">
+            <a href="#works">Works</a>
+          </div>
+          <div class="sidebar__menu--item">
+            <a href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+      <!-- コンテンツ -->
+      <div class="contents">
+        <section class="works" id="works">
+          <div class="works__item">
+            <img src="assets/work01.jpg" alt="朝の前穂高岳" class="js-fadein is-show" loading="lazy">
+          </div>
+          <div class="works__item">
+            <img src="assets/work02.jpg" alt="満開の桜と支柱" class="js-fadein is-show" loading="lazy">
+          </div>
+          <div class="works__item">
+            <img src="assets/work03.jpg" alt="宝剣岳からみる木曽駒ヶ岳方面" class="js-fadein is-show" loading="lazy">
+          </div>
+          <div class="works__item">
+            <img src="assets/work04.jpg" alt="日の光に鮮やかさを増す青モミジとその奥に咲く紫陽花" class="js-fadein is-show" loading="lazy">
+          </div>
+          <div class="works__item">
+            <img src="assets/work05.jpg" alt="コキア畑" class="js-fadein is-show" loading="lazy">
+          </div>
+          <div class="works__item">
+            <img src="assets/work06.jpg" alt="瓦屋根を彩る鮮やかに色づいた木々" class="js-fadein is-show" loading="lazy">
+          </div>
+          <div class="works__item">
+            <img src="assets/work07.jpg" alt="ガスから姿を現した北薬師岳" class="js-fadein is-show" loading="lazy">
+          </div>
+          <div class="works__item">
+            <img src="assets/work08.jpg" alt="空に向かって咲くチングルマの花" class="js-fadein is-show" loading="lazy">
+          </div>
+          <div class="works__item">
+            <img src="assets/work09.jpg" alt="雪に覆われた森の中の木造の家" class="js-fadein is-show" loading="lazy">
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- コピーライト -->
+    <footer class="footer">
+      <p>© 2024 - AxiaClip Portfolio</p>
+    </footer>
+  </body>
+</html>
